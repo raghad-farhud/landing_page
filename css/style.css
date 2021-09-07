@@ -1,0 +1,242 @@
+:root {
+  --mainColorOne: #17abca;
+  --mainColorTwo: #f1c50e;
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Kaisei HarunoUmi", serif;
+}
+/* .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+/* Small */
+/* @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
+/* start header  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 25px;
+}
+header .logo i {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e40016;
+}
+header .links {
+  display: flex;
+  align-items: center;
+}
+header .links ul {
+  display: flex;
+}
+header .links ul li {
+  margin-right: 1.5em;
+  font-size: 1em;
+  text-align: center;
+  color: #17abca;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header .links ul li.active {
+  color: #f1c50e;
+  font-weight: bold;
+}
+header .links ul li:hover {
+  color: #f1c50e;
+  font-weight: bold;
+}
+header .links ul:hover li.active {
+  color: #17abca;
+  font-weight: normal;
+}
+header .links ul li.active:hover {
+  color: #f1c50e;
+  font-weight: bold;
+}
+
+/* end header  */
+
+.landing {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 100%; */
+  min-height: 100%;
+  min-width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+}
+@media (max-width: 768px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    min-height: 100%;
+    min-width: 100%;
+    text-align: center;
+  }
+}
+.landing .desc {
+  min-height: 500px;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: #17abca;
+  color: white;
+  position: relative;
+  line-height: 1.5;
+}
+.landing .desc .des {
+  top: 50%;
+  position: absolute;
+  transform: translatey(-50%);
+  padding: 30px;
+}
+.landing .desc .des h2 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 17px;
+}
+.landing .desc .des p {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+}
+.landing .desc .des button {
+  background-color: var(--mainColorTwo);
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid transparent;
+}
+.landing .desc .des button:hover {
+  background-color: transparent;
+  border: 2px solid #f1c50e;
+}
+.container .landing .image img {
+  background-size: cover;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  transition: 0.7s;
+}
+.landing .image {
+  overflow: hidden;
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
+.container .landing .image:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+.landing .social {
+  background-color: #f1c50e;
+  color: white;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .landing .social {
+    padding: 60px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social i:nth-child(2) {
+    margin: 34px 0;
+  }
+  header .links {
+    font-size: 0.8em;
+  }
+}
+footer {
+  padding: 40px;
+  color: white;
+  text-align: center;
+  background-color: #2b2b2b;
+}
+footer a {
+  color: #f1c50e;
+}
+footer a:hover {
+  color: #17abca;
+}
+i {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: white;
+  width: 50px;
+  transition: 0.2s;
+  height: 50px;
+}
+i:hover {
+  color: #17abca;
+}
+
+
+
+
+.landing .image {
+  overflow: hidden;
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.container .landing .image img {
+  background-size: cover;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  transition: 0.7s;
+}
+
+.container .landing .image:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
